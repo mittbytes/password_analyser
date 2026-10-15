@@ -14,7 +14,7 @@ while True:
 
   if password == "":
     print("password cannot be empty.")
-    exit()
+    continue
   print("=======================")
   print("     PASSWORD ANALYSIS")
   print("=======================")
@@ -50,7 +50,8 @@ while True:
     score += 1
   else:
     print("no lowercase character")
-    print("score : " , score)
+    
+  print("score : " , score)
 
   if score <= 2:
     print("strength : weak")
